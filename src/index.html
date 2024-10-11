@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul class="results">
+
+    </ul>
+
+    <div class="pager">
+        <button class="btn-previous disabled:opacity-50" type="button">Previous</button>
+        <button class="btn-first-page disabled:opacity-50">Fist page</button>
+        <button class="btn-paging disabled:opacity-50" data-page="1">1</button>
+        <button class="btn-paging disabled:opacity-50" data-page="2">2</button>
+        <button class="btn-paging disabled:opacity-50"  data-page="3">3</button>
+        <button class="btn-paging disabled:opacity-50" data-page="4">4</button>
+        <button class="btn-paging disabled:opacity-50" data-page="5">5</button>
+        <button class="btn-paging disabled:opacity-50" data-page="6">6</button>
+        <button class="btn-paging disabled:opacity-50" data-page="7">7</button>
+        <button class="btn-last-page disabled:opacity-50">Last page</button>
+        <button class="btn-next disabled:opacity-50" type="button">Next</button>
+    </div>
+
+    <div aria-hidden="true" class="details flex justify-center items-center fixed top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.5)] aria-[hidden]:hidden">
+        <div class="grid w-full max-w-[600px] bg-white rounded-lg">
+            <div class="flex justify-end"><button class="details-close">close</button></div>
+            <div class="details-content">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
